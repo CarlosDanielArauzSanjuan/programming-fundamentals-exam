@@ -1,16 +1,14 @@
-#3. Desarrolle un programa que solicite ingrese tres voltajes distintos e indique 
-# si el promedio de los voltajes ingresados es menor a 115 visualice `"VOLTAJE CORRECTO"`, REQUEST|1
-# caso contrario sea mayor a 115 y menor a 220 visualice `"ALTO VOLTAJE"`,                 REQUEST|2
-#  y si es mayor a 220 visualice `"PELIGRO"`                                               REQUEST|3
+# 4. Desarrolle el código fuente de un programa que permita ingresar y 
+# leer el valor correspondiente a una distancia en metros y la visualice expresadas en km.                                                 REQUEST
+# 1 kilómetro es igual a 1000 metros, así que simplemente divides la cantidad de metros entre 1000 para obtener el valor en kilómetros.
 
-first =float(input("ingrese el voltaje 1  :"))
-second =float(input("ingrese el voltaje 2  :"))
-third = float(input("ingrese el voltaje 3  :"))
-speed = ((first+second+third )/ 3)
-if speed < 115:                                 #REQUEST 1
-    print("VOLTAJE CORRECTO")     
-else:
-    if 115< speed < 220:                        #REQUEST 2
-        print("ALTO VOLTAJE")
-    elif speed >220 :                           #REQUEST 3
-         print("PELIGRO") 
+print(f""" 
+convertidor de metros a kilometros \n """)
+
+meters = float(input("ingrese la cantidad en metros:   "))
+
+print(f"""
+    {meters} 'metro(s)', equivale(n) a :{meters/1000} 'kilometro(s)' "
+
+    {meters} m. = {meters/1000} km.
+""")
